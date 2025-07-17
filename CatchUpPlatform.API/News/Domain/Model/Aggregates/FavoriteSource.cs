@@ -8,6 +8,12 @@ public class FavoriteSource
     public string NewsApiKey { get; set; }
     public string SourceId { get; set; }
 
+    protected FavoriteSource()
+    {
+        this.NewsApiKey = string.Empty;
+        this.SourceId = string.Empty;
+    }
+
     public FavoriteSource(CreateFavoriteSourceCommand command)
     {
         this.NewsApiKey = command.NewsApiKey;
