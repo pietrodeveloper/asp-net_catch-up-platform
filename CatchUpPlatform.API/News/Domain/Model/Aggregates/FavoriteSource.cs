@@ -2,7 +2,7 @@ using CatchUpPlatform.API.News.Domain.Model.Commands;
 
 namespace CatchUpPlatform.API.News.Domain.Model.Aggregates;
 
-public class FavoriteSource
+public partial class FavoriteSource
 {
     public int Id { get; set; }
     public string NewsApiKey { get; set; }
