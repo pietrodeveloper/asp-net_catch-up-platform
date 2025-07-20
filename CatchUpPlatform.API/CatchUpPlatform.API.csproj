@@ -18,8 +18,6 @@
     <ItemGroup>
       <Folder Include="News\Application\Internal\CommandServices\" />
       <Folder Include="News\Application\Internal\QueryServices\" />
-      <Folder Include="News\Domain\Repositories\" />
-      <Folder Include="News\Infrastructure\Persistence\EFC\Repositories\" />
       <Folder Include="News\Interfaces\REST\Resources\" />
       <Folder Include="News\Interfaces\REST\Transform\" />
     </ItemGroup>
