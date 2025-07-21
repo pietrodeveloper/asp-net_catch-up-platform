@@ -1,5 +1,4 @@
 using CatchUpPlatform.API.News.Domain.Model.Queries;
-using CatchUpPlatform.API.News.Domain.Repositories;
 using CatchUpPlatform.API.News.Domain.Services;
 using CatchUpPlatform.API.News.Interfaces.REST.Resources;
 using CatchUpPlatform.API.News.Interfaces.REST.Transform;
@@ -43,8 +42,8 @@ public class FavoriteSourcesController(
 
     private async Task<ActionResult> GetFavoriteSourceByNewsApiKeyAndSourceId(string newsApiKey, string sourceId)
     {
-        var getFavoriteSoureByNewsApiKeyAndSourceIdQuery = new GetFavoriteSourceByNewsApiKeyAndSourceIdQuery(newsApiKey, sourceId);
-        var result = await favoriteSourceQueryService.Handle(getFavoriteSoureByNewsApiKeyAndSourceIdQuery);
+        var getFavoriteSourceByNewsApiKeyAndSourceIdQuery = new GetFavoriteSourceByNewsApiKeyAndSourceIdQuery(newsApiKey, sourceId);
+        var result = await favoriteSourceQueryService.Handle(getFavoriteSourceByNewsApiKeyAndSourceIdQuery);
         if (result is null) return NotFound();
         var resource = FavoriteSourceResourceFromEntityAssembler.ToResourceFromEntity(result);
         return Ok(resource);
