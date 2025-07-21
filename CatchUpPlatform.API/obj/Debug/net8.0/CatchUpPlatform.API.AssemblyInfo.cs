@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CatchUpPlatform.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+691a7885df7938efe21a5c4e473bf62d0bf440b7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df60da7098ed1deef1a23a4475170323a80d9f6a")]
 [assembly: System.Reflection.AssemblyProductAttribute("CatchUpPlatform.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CatchUpPlatform.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
